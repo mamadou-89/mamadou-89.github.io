@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mamadou DJIBO | Cybersecurity Engineer & Systems & Network</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #e2e8f0; scroll-behavior: smooth; }
+        .mono { font-family: 'Space Mono', monospace; }
+        .sidebar { background-color: #1e293b; }
+        .card { background-color: #1e293b; border: 1px solid #334155; transition: 0.3s; display: flex; flex-direction: column; height: 100%; }
+        .card:hover { border-color: #38bdf8; transform: translateY(-5px); }
+        .terminal { background-color: #000; border: 1px solid #334155; }
+        .blink { animation: blink 1s infinite; }
+        @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+        .tag { background-color: #334155; color: #38bdf8; font-size: 0.7rem; padding: 2px 8px; border-radius: 4px; font-weight: bold; }
+        .profile-pic { border: 2px solid #38bdf8; box-shadow: 0 0 15px rgba(56, 189, 248, 0.4); object-fit: cover; }
+        .github-link { color: #38bdf8; font-weight: 600; font-size: 0.85rem; transition: 0.2s; margin-top: auto; padding-top: 1rem; }
+        .github-link:hover { color: #fff; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0f172a; }
+        ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #38bdf8; }
+    </style>
+</head>
+<body class="flex flex-col md:flex-row">
+
+    <aside class="sidebar relative w-full md:w-80 md:h-screen md:fixed flex flex-col p-6 z-10">
+        
+        <!-- Language Switcher Button -->
+        <div class="absolute top-4 right-4 z-20">
+            <a href="index.html" class="flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1 rounded-full text-xs font-bold border border-slate-600 transition-colors shadow-lg" title="Passer en Français">
+                🇫🇷 FR
+            </a>
+        </div>
+
+        <div class="mb-8 text-center">
+            <img src="assets/img/image_pro.jpg" alt="Mamadou DJIBO" class="w-28 h-28 profile-pic rounded-full mx-auto mb-4">
+            <h1 class="text-xl font-bold">Mamadou DJIBO</h1>
+            <p class="text-sky-400 text-sm font-semibold mt-1 italic">Cybersecurity Engineer</p>
+            <p class="text-slate-400 text-xs italic">Systems & Network Engineer</p>
+        </div>
+        <nav class="space-y-4 flex-grow text-sm">
+            <a href="#about" class="block hover:text-sky-400 transition border-l-2 border-transparent hover:border-sky-400 pl-3">About Me</a>
+            <a href="#skills" class="block hover:text-sky-400 transition border-l-2 border-transparent hover:border-sky-400 pl-3">Technical Skills</a>
+            <a href="#experience" class="block hover:text-sky-400 transition border-l-2 border-transparent hover:border-sky-400 pl-3">Experience</a>
+            <a href="#projects" class="block hover:text-sky-400 transition border-l-2 border-transparent hover:border-sky-400 pl-3">Projects</a>
+            <a href="#contact" class="block hover:text-sky-400 transition border-l-2 border-transparent hover:border-sky-400 pl-3">Contact</a>
+        </nav>
+        <div class="mt-auto pt-6 border-t border-slate-700 space-y-3">
+            <p class="text-xs text-slate-400 mono">📍 Evry-Courcouronnes, France</p>
+            <a href="assets/docs/CV-DJIBO-Mamadou-EN.pdf" target="_blank" class="bg-sky-600 hover:bg-sky-500 text-white px-4 py-2 rounded block text-center text-sm transition font-bold shadow-lg">
+                <i class="fas fa-file-download mr-2"></i>Download Resume
+            </a>
+        </div>
+    </aside>
+
+    <main class="md:ml-80 p-6 md:p-12 w-full space-y-24">
+
+        <section id="about" class="min-h-[60vh] flex flex-col justify-center" data-aos="fade-up">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Systems & Network <span class="text-sky-400">Engineer</span></h2>
+            <p class="text-lg max-w-3xl text-slate-400 leading-relaxed">
+                Graduated with an <strong>Advanced Master's in Cybersecurity (CYNU - INSA Lyon)</strong>, I combine expertise in <strong>System Administration, Networking, and Cybersecurity</strong> with a strong background in <strong>development</strong>.
+                My goal: administer, secure, and optimize modern infrastructures while automating recurring operations.
+            </p>
+            <div class="flex flex-wrap gap-4 mt-8">
+                <span class="tag"><i class="fas fa-certificate mr-1"></i> OKTA CERTIFIED</span>
+                <span class="tag"><i class="fas fa-certificate mr-1"></i> STORMSHIELD CSNA</span>
+            </div>
+        </section>
+
+        <section id="skills" data-aos="fade-up">
+            <h3 class="text-2xl font-bold mb-8 border-b border-slate-700 pb-2 flex items-center gap-3">
+                <i class="fas fa-tools text-sky-400"></i> Technical Skills
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="card p-6 rounded-lg">
+                    <h4 class="text-sky-400 font-bold mb-4 mono italic flex items-center gap-2">
+                        <i class="fas fa-user-shield text-sm"></i> Cyber
+                    </h4>
+                    <ul class="text-sm text-slate-400 space-y-2">
+                        <li>• EDR/XDR (CrowdStrike)</li>
+                        <li>• Patch & Vulnerabilities (Tanium, Nessus)</li>
+                        <li>• SIEM (Splunk, Wazuh)</li>
+                        <li>• Log Analysis (Graylog)</li>
+                        <li>• Network Traffic Analysis (Wireshark)</li>
+                        <li>• MITRE ATT&CK Framework</li>
+                        <li>• Hardening</li>
+                    </ul>
+                </div>
+                <div class="card p-6 rounded-lg">
+                    <h4 class="text-sky-400 font-bold mb-4 mono italic flex items-center gap-2">
+                        <i class="fas fa-network-wired text-sm"></i> Sys & Network
+                    </h4>
+                    <ul class="text-sm text-slate-400 space-y-2">
+                        <li>• OS (Linux, Windows)</li>
+                        <li>• Network Protocols (TCP/IP, HTTP(S), SSH, FTP, DNS, DHCP)</li>
+                        <li>• Network Security (VLAN Segmentation, Firewall, VPN)</li>
+                        <li>• IaC (Terraform, Ansible)</li>
+                        <li>• Cloud (Azure)</li>
+                        <li>• Monitoring (Grafana, Zabbix, Nagios)</li>
+                        <li>• Containers & Virtualization (Docker, Proxmox, VMWare)</li>
+                    </ul>
+                </div>
+                <div class="card p-6 rounded-lg">
+                    <h4 class="text-sky-400 font-bold mb-4 mono italic flex items-center gap-2">
+                        <i class="fas fa-code text-sm"></i> Dev
+                    </h4>
+                    <ul class="text-sm text-slate-400 space-y-2">
+                        <li>• Languages (Python, Bash, C, HTML/CSS, JavaScript)</li>
+                        <li>• Frameworks (FastAPI, Flask)</li>
+                        <li>• DBMS (PostgreSQL, MongoDB, MySQL)</li>
+                        <li>• Tools (Git, Vscode, Postman & APIs) </li>
+                        <li>• AI Assistants (Copilot, Claude, Gemini)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" data-aos="fade-up">
+            <h3 class="text-2xl font-bold mb-8 border-b border-slate-700 pb-2 flex items-center gap-3">
+                <i class="fas fa-briefcase text-sky-400"></i> Professional Experience
+            </h3>
+            <div class="space-y-10">
+                <div class="border-l-2 border-sky-500 pl-6 relative">
+                    <div class="absolute w-3 h-3 bg-sky-500 rounded-full -left-[7px] top-1"></div>
+                    <h4 class="font-bold text-lg">SecOps Assistant Intern — TF1</h4>
+                    <p class="text-sky-400 text-sm mb-2 font-semibold">Nov. 2025 — May 2026 | Boulogne, France</p>
+                    <div class="text-slate-400 text-sm space-y-1">
+                        <p>• Analysis and handling of security alerts via CrowdStrike.</p>
+                        <p>• Patching security vulnerabilities using Tanium.</p>
+                        <p>• Automation of recurring tasks via Python/Bash scripts.</p>
+                    </div>
+                </div>
+
+                <div class="border-l-2 border-slate-700 pl-6 relative">
+                    <h4 class="font-bold text-lg">SysAdmin, Network & DevOps Intern — Euris</h4>
+                    <p class="text-sky-400 text-sm mb-2 font-semibold">Mar. 2025 — Sep. 2025 | Boulogne, France</p>
+                    <div class="text-slate-400 text-sm space-y-1">
+                        <p>• Infrastructure deployment using IaC (Terraform/Ansible).</p>
+                        <p>• Integration and administration of project-critical applications (Bastion, Backups, Monitoring, Centralized Logs, and Business Apps).</p>
+                        <p>• Infrastructure security hardening.</p>
+                    </div>
+                </div>
+
+                <div class="border-l-2 border-slate-700 pl-6 relative">
+                    <h4 class="font-bold text-lg">Software Engineer Intern — VIVERIS</h4>
+                    <p class="text-sky-400 text-sm mb-2 font-semibold">Mar. 2024 — Aug. 2024 | Ramonville Saint-Agne, France</p>
+                    <p class="text-slate-400 text-sm">• Designed a data collection and visualization solution for a simulated 5G network platform.</p>
+                </div>
+
+                <div class="border-l-2 border-slate-700 pl-6 relative">
+                    <h4 class="font-bold text-lg">Developer Intern — IRIT</h4>
+                    <p class="text-sky-400 text-sm mb-2 font-semibold">Apr. 2023 — Jul. 2023 | Toulouse, France</p>
+                    <p class="text-slate-400 text-sm">• Developed an API to trigger service continuity on the UERANSIM 5G network simulator.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" data-aos="fade-up">
+            <h3 class="text-2xl font-bold mb-8 border-b border-slate-700 pb-2 flex items-center gap-3">
+                <i class="fas fa-project-diagram text-sky-400"></i> Projects 
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card p-6 rounded-lg">
+                    <h4 class="text-lg font-bold mb-3 flex items-center gap-2">
+                        <i class="fas fa-lock text-sky-400 text-sm"></i> Encrypted Messaging
+                    </h4>
+                    <p class="text-sm text-slate-400 mb-4">
+                       Designed a secure CLI messaging application using XOR, CBC algorithms, and Diffie-Hellman key exchange.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="tag">C</span><span class="tag">CRYPTOGRAPHY</span>
+                    </div>
+                    <a href="https://github.com/mamadou-89/encrypted-messaging" target="_blank" class="github-link flex items-center gap-2">
+                        <i class="fab fa-github"></i> View on GitHub →
+                    </a>
+                </div>
+                <div class="card p-6 rounded-lg">
+                    <h4 class="text-lg font-bold mb-3 flex items-center gap-2">
+                        <i class="fas fa-wifi text-sky-400 text-sm"></i> IoT Infrastructure based on LoRa/LoRaWAN
+                    </h4>
+                    <p class="text-sm text-slate-400 mb-4">
+                        Deployment of a complete sensor network ecosystem for measuring and visualizing metrics such as temperature, pressure, and humidity in a given location.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tag">LORA</span><span class="tag">LORAWAN</span><span class="tag">IOT</span><span class="tag">SENSORS</span>
+                    </div>
+                </div>
+                <div class="card p-6 rounded-lg">
+                    <h4 class="text-lg font-bold mb-3 flex items-center gap-2">
+                        <i class="fas fa-network-wired text-sky-400 text-sm"></i> Secure Network Architecture
+                    </h4>
+                    <p class="text-sm text-slate-400 mb-4">
+                        Set up a secure enterprise network architecture: DMZ segmentation, Proxy, IPSec VPN, and Wazuh SIEM for monitoring.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tag">PFSENSE</span><span class="tag">WAZUH</span><span class="tag">GNS3</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" data-aos="zoom-in" class="pb-20">
+            <h3 class="text-2xl font-bold mb-8 border-b border-slate-700 pb-2">Contact</h3>
+            <div class="terminal p-6 rounded-lg shadow-2xl mono text-xs md:text-sm overflow-hidden">
+                <div class="flex gap-2 mb-4">
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                </div>
+                <p class="mb-2"><span class="text-green-400 font-bold">visitor@mamadou:~$</span> finger djibo</p>
+                <div class="ml-4 text-slate-300 space-y-1 mb-4 leading-relaxed">
+                    <p>Login: mamadou &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Name: Mamadou DJIBO</p>
+                    <p>Directory: /home/evry &nbsp;&nbsp;&nbsp; Shell: /bin/zsh</p>
+                    <p>Status: <span class="text-sky-400 font-semibold">Looking for a role as Sysadmin / Systems & Network Engineer</span></p>
+                </div>
+                <p class="mb-2"><span class="text-green-400 font-bold">visitor@mamadou:~$</span> cat info.json</p>
+                <div class="text-slate-300 ml-4 mb-4">
+                    { <br>
+                    &nbsp;&nbsp;"email": "<a href="mailto:Mamadoudjibo22@gmail.com" class="hover:text-sky-400 hover:underline transition-colors">Mamadoudjibo22@gmail.com</a>", <br>
+                    &nbsp;&nbsp;"linkedin": "<a href="https://linkedin.com/in/mamadoud-djibos227" target="_blank" class="hover:text-sky-400 hover:underline transition-colors">linkedin.com/in/mamadoud-djibos227</a>", <br>
+                    &nbsp;&nbsp;"root-me": "<a href="https://www.root-me.org/doudou89" target="_blank" class="hover:text-sky-400 hover:underline transition-colors">root-me.org/doudou89</a>", <br>
+                    &nbsp;&nbsp;"github": "<a href="https://github.com/mamadou-89" target="_blank" class="hover:text-sky-400 hover:underline transition-colors">github.com/mamadou-89</a>", <br>
+                     &nbsp;&nbsp;"letsdefend": "<a href="https://app.letsdefend.io/user/mamad89" target="_blank" class="hover:text-sky-400 hover:underline transition-colors">app.letsdefend.io/user/mamad89</a>", <br>
+                    &nbsp;&nbsp;"phone": "<a href="tel:+33686504391" class="hover:text-sky-400 hover:underline transition-colors">06 86 50 43 91</a>" <br>
+                    }
+                </div>
+                <p><span class="text-green-400 font-bold">visitor@mamadou:~$</span> <span class="blink">_</span></p>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+    </script>
+</body>
+</html>
